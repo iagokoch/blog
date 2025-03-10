@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: %i[ show edit update destroy ]
+  before_action :set_post, only: %i[ show edit update destroy ] #callback to set post
 
   # GET /posts or /posts.json
   def index
@@ -10,14 +10,14 @@ class PostsController < ApplicationController
   def show
   end
 
-  # GET /posts/new
+  # GET /posts/new 
   def new
     @post = Post.new
   end
 
   # GET /posts/1/edit
   def edit
-  end
+  end 
 
   # POST /posts or /posts.json
   def create
